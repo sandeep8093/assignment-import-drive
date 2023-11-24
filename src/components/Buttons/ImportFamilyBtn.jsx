@@ -70,7 +70,6 @@ export const ImportFamilyBtn = () => {
     fr.onload = function (e) {
       try {
         const result = JSON.parse(e.target.result)
-        console.log(result)
         const formatted = JSON.stringify(result, null, 2)
         result.value = formatted
 
